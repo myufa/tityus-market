@@ -119,7 +119,7 @@ const PriceEval = () => {
     if (inelligeable) {
         const timeOutId = setTimeout(() => router.push('/home'), 5_000)
         return (
-            <InelligeableScreen />
+            <InelligeableScreen organ={organ} />
         )
     }
 
