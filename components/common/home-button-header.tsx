@@ -27,7 +27,7 @@ const HomeButton = styled.button`
 
 const HomeButtonHeader = () => {
     return (
-        <Flex justifyContent='end' alignItems='center' height={100} marginRight={60}>
+        <Flex justifyContent='flex-end' alignItems='center' height={100} marginRight={60}>
             <Link href='/home' passHref>
                 <HomeButton>Home</HomeButton>
             </Link>
