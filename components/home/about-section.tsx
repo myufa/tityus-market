@@ -26,7 +26,7 @@ const Blurb = styled.p`
     font-size: 20px;
     color: white;
     opacity: 0.5;
-    width: 450px;
+    width: 475px;
     height: 40px;
     padding-left: 5px;
     margin-top: 0;
@@ -42,25 +42,24 @@ const AboutSection = () => {
     return (
         <Container id='about'>
             <Flex center fullHeight>
-                <Flex justifyContent='center'>
-                    <Flex column paddingRight={80}>
+                <Flex justifyContent='space-between' fullWidth>
+                    <Flex column paddingLeft={100}>
                         <Image src={slantPanel} alt="slant panel" width={320} height={465} />
                     </Flex>
-                    <Flex column paddingRight={80}>
+                    <Flex column paddingRight={55}>
                         <AboutHeading>What is TITYUS ?</AboutHeading>
                         <Blurb>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum.
+                        TITYUS strives to revolutionize America&apos;s organ trade system. We started with the objective of
+                        creating a more accessible and streamlined selling process that would enable people to monetize
+                        their bodies efficiently. Today, we offer a trusted and easy-to-use platform for over 10 thousand
+                        vendors nationwide, assuring them high monetary compensations and comprehensive support throughout
+                        the transplant process.
                         </Blurb>
                     </Flex>
                 </Flex>
             </Flex>
             <OrbContainer>
-                <Image src="/red-circle-half.svg" alt="Red Circle Half" width={400} height={400} />
+                <Image src="/red-circle-half.svg" alt="Red Circle Half" width={300} height={300} />
             </OrbContainer>
         </Container>
     )

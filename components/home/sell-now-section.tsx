@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import Flex from '../common/flex'
 
 
-import HandStatue from '../../public/home/hand-statue.jpg'
-import BustStatue from '../../public/home/bust-statue.jpg'
+import HandStatue from '../../public/home/hand-statue.png'
+import BustStatue from '../../public/home/bust-statue.png'
 
 const Container = styled.div`
     position: relative;

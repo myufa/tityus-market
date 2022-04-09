@@ -15,6 +15,7 @@ import { useEffect } from 'react'
 
 
 const Container = styled.div`
+    width: 100%;
 `
 
 const LearnMoreButton = styled.button`
