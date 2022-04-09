@@ -101,9 +101,13 @@ const PriceEval = () => {
         0
     )
 
+    const badHealth = [...surveyAnswers.values()][0].status === SurveyQuestionStatus.NO
+
+    const badHealthPenalty = badHealth ? INELIGABLE : 0
+
     const sectionLoss = calculateSectionsLoss(organ, [...surveyAnswers.entries()])
     console.log('sectionLoss', sectionLoss)
-    const totalValue = organPriceMap[organ].initial + valueLoss + sectionLoss
+    const totalValue = organPriceMap[organ].initial + valueLoss + sectionLoss + badHealthPenalty
     const inelligeable = totalValue < organPriceMap[organ].min
 
     useEffect(() => {
