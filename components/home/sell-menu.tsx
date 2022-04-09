@@ -11,12 +11,15 @@ import Eye from '../../public/home/Eye.jpg'
 import useStore, { Organ } from '../../store'
 
 const OrganCard = styled(Flex)`
-    background: #171C27;
+    background: black;
     border-radius: 12px;
+    width: 23%;
 `
 
 const OrganContainer = styled(Flex)`
     cursor: pointer;
+
+    overflow: hidden;
 `
 
 const OrganCaption = styled(Flex)`
@@ -25,6 +28,8 @@ const OrganCaption = styled(Flex)`
     font-weight: 500;
     font-size: 20px;
     color: #FAFAFB;
+    background: #171C27;
+    border-radius: 0 0 12px 12px;
 `
 
 const SellMenu = () => {
@@ -38,12 +43,12 @@ const SellMenu = () => {
     }
 
     return (
-        <Flex fullWidth center>
+        <Flex fullWidth center paddingLeft={30} paddingRight={30}>
             <Flex justifyContent='space-between' width={1200}>
                 <OrganCard column onClick={() => {handleClick(Organ.KIDNEY)}} pointer>
                         <Flex column>
-                            <OrganContainer>
-                                <Image src={Kidney} alt="Kidney" width={272} height={272} />
+                            <OrganContainer center>
+                                <Image src={Kidney} alt="Kidney" width={200} height={200} />
                             </OrganContainer>
                             <OrganCaption fullWidth height={90} center>
                                 <p>Kidney</p>
@@ -52,8 +57,8 @@ const SellMenu = () => {
                 </OrganCard>
                 <OrganCard column onClick={() => {handleClick(Organ.LIVER)}} pointer>
                     <Flex column>
-                        <OrganContainer>
-                            <Image src={Liver} alt="Liver" width={272} height={272} />
+                        <OrganContainer center>
+                            <Image src={Liver} alt="Liver" width={200} height={200} />
                         </OrganContainer>
                         <OrganCaption fullWidth height={90} center>
                             <p>Part of liver</p>
@@ -62,8 +67,8 @@ const SellMenu = () => {
                 </OrganCard>
                 <OrganCard column onClick={() => {handleClick(Organ.BONE)}} pointer>
                     <Flex column>
-                        <OrganContainer>
-                            <Image src={Bone} alt="Bone" width={272} height={272} />
+                        <OrganContainer center>
+                            <Image src={Bone} alt="Bone" width={200} height={200} />
                         </OrganContainer>
                         <OrganCaption fullWidth height={90} center>
                             <p>Bone marrow</p>
@@ -72,8 +77,8 @@ const SellMenu = () => {
                 </OrganCard>
                 <OrganCard column onClick={() => {handleClick(Organ.CORNEA)}} pointer>
                     <Flex column>
-                        <OrganContainer>
-                            <Image src={Eye} alt="Eye" width={272} height={272} />
+                        <OrganContainer center>
+                            <Image src={Eye} alt="Eye" width={200} height={200} />
                         </OrganContainer>
                         <OrganCaption fullWidth height={90} center>
                             <p>Cornea</p>

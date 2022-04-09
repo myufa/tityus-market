@@ -25,7 +25,7 @@ const SectionHeading = styled.h1`
 `
 
 const UserActionPanel = styled(Flex)`
-    width: 380px;
+    width: 325px;
     height: 340px;
     background: linear-gradient(180deg, #212634 0%, rgba(33, 38, 52, 0) 100%);
     border-radius: 12px;
@@ -71,7 +71,7 @@ const SellBars = () => {
                     <Flex center marginBottom={50}>
                         <SectionHeading>Start selling in 3 Steps</SectionHeading>
                     </Flex>
-                    <Flex fullWidth center>
+                    <Flex fullWidth center paddingLeft={30} paddingRight={30}>
                         <Flex justifyContent='space-between' width={1200}>
                             <UserActionPanel column>
                                 <Flex justifyContent='center' paddingTop={60}>

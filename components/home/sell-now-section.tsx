@@ -60,12 +60,12 @@ const StatCaption = styled.p`
 
 const Blurb = styled.p`
     position: absolute;
-    right: 200px;
-    top: 340px;
+    right: 30px;
+    top: 425px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     opacity: 0.5;
     width: 250px;
@@ -100,15 +100,15 @@ const HandContainer = styled(Flex)`
 
 const BustContainer = styled(Flex)`
     position: absolute;
-    right: 220px;
+    right: 30px;
     top: 30px;
     z-index: 2;
 `
 
 const SellNowButton = styled.button`
     position: absolute;
-    right: 550px;
-    top: 400px;
+    right: 190px;
+    top: 345px;
     background-color: #BD4141;
     color: white;
     font-family: 'Poppins';
@@ -168,7 +168,7 @@ const SellNowSection = () => {
                 <Image src="/statue-frame.svg" alt="Statue Frame" width={326} height={400} />
             </HandFrameContainer>
             <HandContainer>
-                <Image src={HandStatue} alt="Hand Statue" width={340} height={420} />
+                <Image src={HandStatue} alt="Hand Statue" width={300} height={370.6} />
             </HandContainer>
             <BustContainer>
                 <Image src={BustStatue} alt="Bust Statue" width={220} height={267} />
