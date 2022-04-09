@@ -31,11 +31,11 @@ const SellNow = () => {
     }, [])
 
     return (
-        <Container column>
+        <Container column fullWidth>
             <HomeButtonHeader />
-            <Flex center>
-                <Flex column>
-                    <Flex center marginBottom={30}>
+            <Flex center fullWidth>
+                <Flex column fullWidth>
+                    <Flex center marginBottom={30} fullWidth>
                         <SectionHeading>What can you sell?</SectionHeading>
                     </Flex>
                     <SellMenu />
